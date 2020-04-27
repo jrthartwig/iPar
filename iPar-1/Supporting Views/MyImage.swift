@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Image.swift
 //  iPar-1
 //
 //  Created by Jocelynn Hartwig on 4/25/20.
@@ -8,14 +8,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MyImage: View {
+    var image: Image
+
     var body: some View {
-        Text("Hello, World!")
+        image
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MyImage_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MyImage(image: Image("hole_one"))
     }
 }
